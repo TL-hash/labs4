@@ -16,7 +16,6 @@ if __name__ == "__main__":
         if A[i] % 2 == 0 and A[i + 1] % 2 == 0:
             found_pair = True
             last_pos = i
-            print(f"Найдена пара четных: ({A[i]}, {A[i + 1]}) на позициях {i} и {i + 1}")
 
     if found_pair:
         print("Элементы перед последней парой четных:")
