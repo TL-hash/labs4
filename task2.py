@@ -27,7 +27,7 @@ if __name__ == '__main__':
     low_abs = [item for item in A if abs(item) <= 1]
     high_abs = [item for item in A if abs(item) > 1]
     sorted_list = low_abs + high_abs
-    A.sort(key=lambda x: abs(x) > 1)
+    #A.sort(key=lambda x: abs(x) > 1)
 
     print(f"Преобразованный список: {sorted_list}")
-    print(f"Преобразованный список: {A}")
+    #print(f"Преобразованный список: {A}")
