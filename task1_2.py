@@ -6,10 +6,10 @@ import math
 
 
 if __name__ == '__main__':
-    A = list(map(int, input().split()))
-    if len(A) != 10:
+    a = list(map(int, input().split()))
+    if len(a) != 10:
         print("Неверный размер списка", file=sys.stderr)
         exit(1)
 
-    p = math.prod([item for item in A if item < 0])
+    p = math.prod([item for item in a if item < 0])
     print(p)
