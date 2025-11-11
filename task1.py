@@ -5,13 +5,13 @@ import sys
 
 
 if __name__ == '__main__':
-    A = list(map(int, input().split()))
-    if len(A) != 10:
+    a = list(map(int, input().split()))
+    if len(a) != 10:
         print("Неверный размер списка", file=sys.stderr)
         exit(1)
 
     p = 1
-    for item in A:
+    for item in a:
         if item < 0:
             p *= item
 
