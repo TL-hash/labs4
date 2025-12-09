@@ -9,13 +9,13 @@ if __name__ == "__main__":
         print("Кортеж должен содержать хотя бы 2 элемента", file=sys.stderr)
         exit(1)
 
-    last_pos = -1
+    last_pos = 0
 
     for i, (x, y) in enumerate(zip(a, a[1:])):
         if x % 2 == 0 and y % 2 == 0:
             last_pos = i
 
-    if last_pos == -1:
+    if last_pos == 0:
         print("В кортеже нет пар соседних четных элементов")
     else:
         print("Элементы перед последней парой четных:")
