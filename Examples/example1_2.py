@@ -5,10 +5,10 @@ import sys
 
 
 if __name__ == '__main__':
-    A = list(map(int, input().split()))
-    if len(A) != 10:
+    a = list(map(int, input().split()))
+    if len(a) != 10:
         print("Неверный размер списка", file=sys.stderr)
         exit(1)
 
-    s = sum([a for a in A if abs(a) < 5])
+    s = sum([elem for elem in a if abs(elem) < 5])
     print(s)

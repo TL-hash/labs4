@@ -4,10 +4,10 @@
 import sys
 
 if __name__ == "__main__":
-    A = tuple(map(int, input().split()))
-    if len(A) != 10:
+    a = tuple(map(int, input().split()))
+    if len(a) != 10:
         print("Неверный размер кортежа", file=sys.stderr)
         exit(1)
 
-    s = sum(a for a in A if abs(a) < 5)
+    s = sum(elem for elem in a if abs(elem) < 5)
     print(s)

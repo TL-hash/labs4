@@ -5,13 +5,13 @@ import sys
 
 
 if __name__ == "__main__":
-    A = tuple(map(int, input().split()))
-    if len(A) != 10:
+    a = tuple(map(int, input().split()))
+    if len(a) != 10:
         print("Неверный размер кортежа", file=sys.stderr)
         exit(1)
 
     s = 0
-    for item in A:
+    for item in a:
         if abs(item) < 5:
             s += item
             
